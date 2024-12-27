@@ -21,7 +21,7 @@ func FindAllPageLinks(html string) ([]string, error) {
 		}
 	}
 	if len(newLinks) == 0 {
-		return newLinks, fmt.Errorf("no <a> tags found")
+		return newLinks, fmt.Errorf("no &lt;a&gt; tags found")
 	}
 	return newLinks, nil
 }
